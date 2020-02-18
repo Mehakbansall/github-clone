@@ -1,0 +1,15 @@
+<mat-card *ngIf="user">
+    <div class="user-card">
+        <img class="user-image" [src]="user.avatar_url">
+        <h3 mat-line><a routerLink="/users/{{ user.login }}">{{user.login}}</a></h3>
+        <p mat-line>Id:
+            <span>{{user.id}}</span>
+        </p>
+        <p mat-line>Repository Url:
+            <span>{{user.repos_url}}</span>
+        </p>
+        <mat-card-actions>
+            <button mat-raised-button (click)="back()" color="primary">Back</button>
+        </mat-card-actions>
+    </div>
+</mat-card>

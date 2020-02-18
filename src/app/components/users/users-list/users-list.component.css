@@ -1,0 +1,71 @@
+.user-card {
+    width:50%;
+    margin: 20px 0px 20px 350px;
+}
+
+.width-100-percent {
+    width: 100%;
+}
+
+.search-input-box {
+    border: none;
+    width: 60%;
+    padding: 10px;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 10px auto;
+    margin-left:300px;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-result {
+    width: 60%;
+    margin: 0 auto;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.card-background-image {
+    background-repeat: no-repeat;
+    padding-top: 30%;
+    width: 40%;
+    background-size: contain;
+    float: left;
+}
+
+.card-details {
+    float: left;
+    width: 190px;
+    padding-left: 10px;
+}
+
+td {
+    vertical-align: top;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .dragdroparea {
+        padding-top: 65%;
+    }
+    .dragdropcontainer {
+        width: 80%;
+    }
+    .search-image {
+        width: 80%;
+    }
+    .center {
+        width: 40%;
+    }
+    .search-result {
+        width: 80%;
+    }
+}

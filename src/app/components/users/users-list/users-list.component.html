@@ -1,0 +1,16 @@
+<div class="ui-inputgroup div-center">
+    <input matInput placeholder="Search User" name="search" [(ngModel)]="searchResults" 
+        class="search-input-box" type="text" autofocus>
+</div>
+
+<mat-card class="user-card" *ngFor="let user of users | filter:searchResults">
+    <mat-list>
+        <mat-list-item>
+            <img mat-list-avatar src="{{user.avatar_url}}" alt="Desc 1">
+            <h3 mat-line><a routerLink="/users/{{ user.login }}">{{user.login}}</a></h3>
+            <p mat-line>Repository Url:
+                <span>{{user.repos_url}}</span>
+            </p>
+        </mat-list-item>
+    </mat-list>
+</mat-card>
